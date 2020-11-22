@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Power save mode
+Exec=gksudo -k -u root bash ./set_power_save.sh
+Type=Application
+StartupNotify=true
+Path=/home/aleksandr/projects/powerSaveOfX200MA
+Icon=battery
+Categories=Utility

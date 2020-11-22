@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Max power mode
+Exec=gksudo -k -u root bash ./set_max_power.sh
+Type=Application
+StartupNotify=true
+Path=/home/aleksandr/projects/powerSaveOfX200MA
+Icon=battery
+Categories=Utility

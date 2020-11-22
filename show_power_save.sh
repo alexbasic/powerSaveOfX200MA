@@ -1,3 +1,6 @@
+cat '/sys/devices/system/cpu/intel_pstate/status'
+cat '/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor'
+cat '/sys/devices/system/cpu/cpu1/cpufreq/scaling_governor'
 cat '/proc/sys/vm/dirty_writeback_centisecs'
 cat '/proc/sys/kernel/nmi_watchdog'
 cat '/sys/module/snd_hda_intel/parameters/power_save'

@@ -1,13 +1,13 @@
 #!/bin/bash
 
-echo "passive" | tee /sys/devices/system/cpu/intel_pstate/status
-echo "conservative" | tee /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-echo "conservative" | tee /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
+echo "active" | tee /sys/devices/system/cpu/intel_pstate/status
+echo "performance" | tee /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+echo "performance" | tee /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
 
 
 
 #power save for HDA intel audio
-echo 1 > /sys/module/snd_hda_intel/parameters/power_save
+echo 0 > /sys/module/snd_hda_intel/parameters/power_save
 
 exit
 

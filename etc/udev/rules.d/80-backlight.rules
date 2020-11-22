@@ -1,0 +1,2 @@
+SUBSYSTEM=="power_supply", ENV{POWER_SUPPLY_ONLINE}=="0", RUN+="/etc/backlight.sh 391"
+SUBSYSTEM=="power_supply", ENV{POWER_SUPPLY_ONLINE}=="1", RUN+="/etc/backlight.sh 4293"
